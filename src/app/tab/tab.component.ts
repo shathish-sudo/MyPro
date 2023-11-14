@@ -13,7 +13,12 @@ import { MatTabsModule } from '@angular/material/tabs';
 
 })
 export class TabComponent {
-  isOn:boolean = true;
+  isToggle:boolean = true;
+  toggle()
+  {
+    this.isToggle = !this.isToggle;
+
+  }
 
 
 }

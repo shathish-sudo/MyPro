@@ -1,6 +1,15 @@
-<h1> Test </h1>
+<ng-container *ngIf="isToggle; then on else off" >
 
+</ng-container>
+<ng-template #on >
+  Button On
+</ng-template>
 
+<ng-template #off>
+  Button Off
+</ng-template>
+<br>
+<button (click)="toggle()">Toggle</button>
 
   
 
